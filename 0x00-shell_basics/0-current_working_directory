@@ -1,3 +1,2 @@
 #!/bin/bash
-current_directory_absolute=$(pwd)
-echo $current_directory_absolute
+echo $("pwd")
