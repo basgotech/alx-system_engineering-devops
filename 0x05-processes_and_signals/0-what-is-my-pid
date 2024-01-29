@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo $$  # $$ contains the PID of the currently running script
