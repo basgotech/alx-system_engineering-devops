@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# hat prints "To infinity and beyond" repeatedly
+#+ until you interrupted it with Ctrl+C
+
+kill "$(pgrep -f 4-to_infinity_and_beyond)"
