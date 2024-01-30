@@ -2,7 +2,7 @@
 
 input_text = ARGV[0]
 
-regex = /\bhtn\b|\bhbt{2,5}n\b/
+regex = /\bhbn\b|\bhbt{2,5}n\b/
 
 result = input_text.scan(regex).join(' ')
 
