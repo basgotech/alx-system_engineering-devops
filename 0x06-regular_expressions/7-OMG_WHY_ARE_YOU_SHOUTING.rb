@@ -1,16 +1,17 @@
 #!/usr/bin/env ruby
 
-# Detect the argument as the string to test
-string_to_test = ARGV[0]
+# This script extracts all consecutive sequences of uppercase letters
+# from a provided string and joins them into a single string.
 
-# Define the regular expression pattern reg
-regex_pattern = /^[A-Z]+$/
+string_to_process = ARGV[0]
 
-# Check if the string matches the pattern todo
-if string_to_test.match?(regex_pattern)
-  # Print the uppercase letters if it matches
-  puts string_to_test.upcase
-else
-  # Print nothing if it doesn't equal or much
-  puts ""
-end
+# Regular expression to match uppercase sequences
+uppercase_sequences = string_to_process.scan(/[A-Z]*/)
+
+# Combine the extracted sequences into a single string
+extracted_uppercase = uppercase_sequences.join
+
+# Print the extracted uppercase letters (or nothing if none found)
+puts extracted_uppercase.empty? ? "" : extracted_uppercase
+
+# Note: This script ignores lowercase letters and other characters.
