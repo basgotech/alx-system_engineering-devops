@@ -1,14 +1,16 @@
 #!/usr/bin/env ruby
 
-# Check if the script has been given an argument
-input_text = ARGV[0]
+# Capture the argument as the string to test
+string_to_test = ARGV[0]
 
-# Define the regular expression to match the specified pattern
-regex = /\Ah.n\z/
+# Define the regular expression pattern
+regex_pattern = /^h.n$/
 
-# Check if the input text matches the regular expression
-if input_text.match?(regex)
-  puts "#{input_text}$"
+# Check if the string matches the pattern
+if string_to_test.match?(regex_pattern)
+  # Print the string if it matches
+  puts string_to_test
 else
-  puts "$"
+  # Print nothing if it doesn't match
+  puts ""
 end
