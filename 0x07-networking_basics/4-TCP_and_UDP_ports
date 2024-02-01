@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# Use ss or netstat depending on availability
+netstat -l --program
